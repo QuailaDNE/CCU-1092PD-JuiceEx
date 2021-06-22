@@ -15,6 +15,11 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "usage: %s tolower file\n", argv[0]);
         exit(1);
     }
+    
+    if(strcmp(argv[1], "tolower") != 0){
+        fprintf(stderr, "usage: %s tolower file\n", argv[0]);
+        exit(1);
+    }
 
     fd = open(argv[2], O_RDONLY);
     if(fd < 0) {
