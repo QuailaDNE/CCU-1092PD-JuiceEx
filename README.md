@@ -20,3 +20,11 @@ This program will convert every capital letter in the file to lowercase.
 Every capital letter of the file in the path will be converted to lowercase.
 
 ## 21_reverse.c
+This program will reverse the contents of a file.
+#### command: 
+``` terminal
+./a.out reverse path
+```
+#### description:
+The contents of the file in the path will be reversed.
+
