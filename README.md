@@ -17,6 +17,6 @@ This program will convert every capital letter in the file to lowercase.
 ./a.out tolower path
 ```
 #### description:
-Every capital letters of the file in the path will be converted to lowercase.
+Every capital letter of the file in the path will be converted to lowercase.
 
 ## 21_reverse.c
