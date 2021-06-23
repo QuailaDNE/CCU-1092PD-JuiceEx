@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     }
 
 
-    fd = open(argv[2], O_RDONLY);
+    fd = open(argv[1], O_RDONLY);
     if(fd < 0) {
         fprintf(stderr, "open error: %s\n", argv[2]);
         exit(1);
@@ -34,6 +34,6 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    fd = open(argv[2], O_WRONLY);
+    fd = open(argv[1], O_WRONLY);
     write(fd, buf, readCnt);
 }
