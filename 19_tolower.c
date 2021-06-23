@@ -11,15 +11,11 @@ int main(int argc, char *argv[]) {
     char buf[MaxBuf];
     int fd, fsize, readCnt, i;
 
-    if(argc != 3){
+    if(argc != 2){
         fprintf(stderr, "usage: %s tolower file\n", argv[0]);
         exit(1);
     }
-    
-    if(strcmp(argv[1], "tolower") != 0){
-        fprintf(stderr, "usage: %s tolower file\n", argv[0]);
-        exit(1);
-    }
+
 
     fd = open(argv[2], O_RDONLY);
     if(fd < 0) {
